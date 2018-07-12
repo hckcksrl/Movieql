@@ -1,0 +1,22 @@
+type Movie {
+    id:Int!
+    name:String!
+    rating:Float!
+}
+
+type YTSMovie{
+    id:Int!
+    title:String!
+}
+
+type Query{
+    movies:[Movie]!
+    movie(id:Int):Movie
+    ytsmovies(limit:Int! , rating: Float) : YTSMovie!
+}
+
+type Mutation{
+    CreateMovie(id:Int!):Movie!
+    DeleteMovie(id:Int!):[Movie]!
+    UpdateMovie(id:Int!,rating:Float!):Movie
+}
