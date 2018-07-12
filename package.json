@@ -1,0 +1,22 @@
+{
+  "name": "SelfMovie",
+  "version": "1.0.0",
+  "description": "SelfMovie",
+  "main": "index.js",
+  "repository": "https://github.com/hckcksrl/Movieql",
+  "author": "hckcksrl",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "graphql-yoga": "^1.14.12",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
+  "scripts": {
+    "start" : "nodemon --exec babel-node index.js"
+  }
+}
